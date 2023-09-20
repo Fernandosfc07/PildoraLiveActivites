@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A241B732AB03D76003793B4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A241B722AB03D76003793B4 /* TimerView.swift */; };
+		1A9FAFD92ABAE26100D9F1B9 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FAFD82ABAE26100D9F1B9 /* TimerManager.swift */; };
+		1A9FAFDB2ABAE31000D9F1B9 /* TimeResourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FAFDA2ABAE31000D9F1B9 /* TimeResourses.swift */; };
+		1A9FAFEF2ABAE54E00D9F1B9 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FAFD82ABAE26100D9F1B9 /* TimerManager.swift */; };
+		1A9FAFF02ABAE66E00D9F1B9 /* TimeResourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FAFDA2ABAE31000D9F1B9 /* TimeResourses.swift */; };
 		1AC33BCF2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */; };
 		1AC33BD72AAEF73500BA2CC6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC33BD62AAEF73500BA2CC6 /* WidgetKit.framework */; };
 		1AC33BD92AAEF73500BA2CC6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC33BD82AAEF73500BA2CC6 /* SwiftUI.framework */; };
@@ -48,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		1A241B722AB03D76003793B4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		1A9FAFD82ABAE26100D9F1B9 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		1A9FAFDA2ABAE31000D9F1B9 /* TimeResourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeResourses.swift; sourceTree = "<group>"; };
 		1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackingAttributes.swift; sourceTree = "<group>"; };
 		1AC33BD42AAEF73500BA2CC6 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC33BD62AAEF73500BA2CC6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -129,10 +135,12 @@
 				1AC33BEA2AAEFA8500BA2CC6 /* Info.plist */,
 				1AF481EA2AA7204700CA218F /* PildoraLiveActivitiesApp.swift */,
 				1AF481EC2AA7204700CA218F /* ContentView.swift */,
-				1AF481EE2AA7204B00CA218F /* Assets.xcassets */,
-				1AF481F02AA7204B00CA218F /* Preview Content */,
 				1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */,
 				1A241B722AB03D76003793B4 /* TimerView.swift */,
+				1A9FAFD82ABAE26100D9F1B9 /* TimerManager.swift */,
+				1A9FAFDA2ABAE31000D9F1B9 /* TimeResourses.swift */,
+				1AF481EE2AA7204B00CA218F /* Assets.xcassets */,
+				1AF481F02AA7204B00CA218F /* Preview Content */,
 			);
 			path = PildoraLiveActivities;
 			sourceTree = "<group>";
@@ -247,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC33BDC2AAEF73500BA2CC6 /* WidgetsBundle.swift in Sources */,
+				1A9FAFF02ABAE66E00D9F1B9 /* TimeResourses.swift in Sources */,
+				1A9FAFEF2ABAE54E00D9F1B9 /* TimerManager.swift in Sources */,
 				1AC33BE92AAEF79B00BA2CC6 /* TimeTrackingAttributes.swift in Sources */,
 				1AC33BDE2AAEF73500BA2CC6 /* Widgets.swift in Sources */,
 			);
@@ -257,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF481ED2AA7204700CA218F /* ContentView.swift in Sources */,
+				1A9FAFD92ABAE26100D9F1B9 /* TimerManager.swift in Sources */,
+				1A9FAFDB2ABAE31000D9F1B9 /* TimeResourses.swift in Sources */,
 				1AC33BCF2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift in Sources */,
 				1A241B732AB03D76003793B4 /* TimerView.swift in Sources */,
 				1AF481EB2AA7204700CA218F /* PildoraLiveActivitiesApp.swift in Sources */,
