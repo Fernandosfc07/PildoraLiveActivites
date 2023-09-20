@@ -7,13 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A241B732AB03D76003793B4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A241B722AB03D76003793B4 /* TimerView.swift */; };
+		1AC33BCF2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */; };
+		1AC33BD72AAEF73500BA2CC6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC33BD62AAEF73500BA2CC6 /* WidgetKit.framework */; };
+		1AC33BD92AAEF73500BA2CC6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC33BD82AAEF73500BA2CC6 /* SwiftUI.framework */; };
+		1AC33BDC2AAEF73500BA2CC6 /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC33BDB2AAEF73500BA2CC6 /* WidgetsBundle.swift */; };
+		1AC33BDE2AAEF73500BA2CC6 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC33BDD2AAEF73500BA2CC6 /* Widgets.swift */; };
+		1AC33BE02AAEF73700BA2CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC33BDF2AAEF73700BA2CC6 /* Assets.xcassets */; };
+		1AC33BE42AAEF73700BA2CC6 /* WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1AC33BD42AAEF73500BA2CC6 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1AC33BE92AAEF79B00BA2CC6 /* TimeTrackingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */; };
 		1AF481EB2AA7204700CA218F /* PildoraLiveActivitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF481EA2AA7204700CA218F /* PildoraLiveActivitiesApp.swift */; };
 		1AF481ED2AA7204700CA218F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF481EC2AA7204700CA218F /* ContentView.swift */; };
 		1AF481EF2AA7204B00CA218F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF481EE2AA7204B00CA218F /* Assets.xcassets */; };
 		1AF481F22AA7204B00CA218F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF481F12AA7204B00CA218F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1AC33BE22AAEF73700BA2CC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AF481DF2AA7204700CA218F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AC33BD32AAEF73500BA2CC6;
+			remoteInfo = WidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AC33BE82AAEF73700BA2CC6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1AC33BE42AAEF73700BA2CC6 /* WidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A241B722AB03D76003793B4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackingAttributes.swift; sourceTree = "<group>"; };
+		1AC33BD42AAEF73500BA2CC6 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC33BD62AAEF73500BA2CC6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1AC33BD82AAEF73500BA2CC6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1AC33BDB2AAEF73500BA2CC6 /* WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsBundle.swift; sourceTree = "<group>"; };
+		1AC33BDD2AAEF73500BA2CC6 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		1AC33BDF2AAEF73700BA2CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AC33BE12AAEF73700BA2CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC33BEA2AAEFA8500BA2CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1AF481E72AA7204700CA218F /* PildoraLiveActivities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PildoraLiveActivities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF481EA2AA7204700CA218F /* PildoraLiveActivitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PildoraLiveActivitiesApp.swift; sourceTree = "<group>"; };
 		1AF481EC2AA7204700CA218F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +65,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1AC33BD12AAEF73500BA2CC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC33BD92AAEF73500BA2CC6 /* SwiftUI.framework in Frameworks */,
+				1AC33BD72AAEF73500BA2CC6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AF481E42AA7204700CA218F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC33BD52AAEF73500BA2CC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AC33BD62AAEF73500BA2CC6 /* WidgetKit.framework */,
+				1AC33BD82AAEF73500BA2CC6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AC33BDA2AAEF73500BA2CC6 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				1AC33BDB2AAEF73500BA2CC6 /* WidgetsBundle.swift */,
+				1AC33BDD2AAEF73500BA2CC6 /* Widgets.swift */,
+				1AC33BDF2AAEF73700BA2CC6 /* Assets.xcassets */,
+				1AC33BE12AAEF73700BA2CC6 /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		1AF481DE2AA7204700CA218F = {
 			isa = PBXGroup;
 			children = (
 				1AF481E92AA7204700CA218F /* PildoraLiveActivities */,
+				1AC33BDA2AAEF73500BA2CC6 /* Widgets */,
+				1AC33BD52AAEF73500BA2CC6 /* Frameworks */,
 				1AF481E82AA7204700CA218F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				1AF481E72AA7204700CA218F /* PildoraLiveActivities.app */,
+				1AC33BD42AAEF73500BA2CC6 /* WidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +126,13 @@
 		1AF481E92AA7204700CA218F /* PildoraLiveActivities */ = {
 			isa = PBXGroup;
 			children = (
+				1AC33BEA2AAEFA8500BA2CC6 /* Info.plist */,
 				1AF481EA2AA7204700CA218F /* PildoraLiveActivitiesApp.swift */,
 				1AF481EC2AA7204700CA218F /* ContentView.swift */,
 				1AF481EE2AA7204B00CA218F /* Assets.xcassets */,
 				1AF481F02AA7204B00CA218F /* Preview Content */,
+				1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */,
+				1A241B722AB03D76003793B4 /* TimerView.swift */,
 			);
 			path = PildoraLiveActivities;
 			sourceTree = "<group>";
@@ -70,6 +148,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1AC33BD32AAEF73500BA2CC6 /* WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AC33BE52AAEF73700BA2CC6 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */;
+			buildPhases = (
+				1AC33BD02AAEF73500BA2CC6 /* Sources */,
+				1AC33BD12AAEF73500BA2CC6 /* Frameworks */,
+				1AC33BD22AAEF73500BA2CC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetsExtension;
+			productName = WidgetsExtension;
+			productReference = 1AC33BD42AAEF73500BA2CC6 /* WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1AF481E62AA7204700CA218F /* PildoraLiveActivities */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AF481F52AA7204B00CA218F /* Build configuration list for PBXNativeTarget "PildoraLiveActivities" */;
@@ -77,10 +172,12 @@
 				1AF481E32AA7204700CA218F /* Sources */,
 				1AF481E42AA7204700CA218F /* Frameworks */,
 				1AF481E52AA7204700CA218F /* Resources */,
+				1AC33BE82AAEF73700BA2CC6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1AC33BE32AAEF73700BA2CC6 /* PBXTargetDependency */,
 			);
 			name = PildoraLiveActivities;
 			productName = PildoraLiveActivities;
@@ -97,6 +194,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					1AC33BD32AAEF73500BA2CC6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					1AF481E62AA7204700CA218F = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -116,11 +216,20 @@
 			projectRoot = "";
 			targets = (
 				1AF481E62AA7204700CA218F /* PildoraLiveActivities */,
+				1AC33BD32AAEF73500BA2CC6 /* WidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1AC33BD22AAEF73500BA2CC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC33BE02AAEF73700BA2CC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AF481E52AA7204700CA218F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +242,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1AC33BD02AAEF73500BA2CC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC33BDC2AAEF73500BA2CC6 /* WidgetsBundle.swift in Sources */,
+				1AC33BE92AAEF79B00BA2CC6 /* TimeTrackingAttributes.swift in Sources */,
+				1AC33BDE2AAEF73500BA2CC6 /* Widgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AF481E32AA7204700CA218F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1AF481ED2AA7204700CA218F /* ContentView.swift in Sources */,
+				1AC33BCF2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift in Sources */,
+				1A241B732AB03D76003793B4 /* TimerView.swift in Sources */,
 				1AF481EB2AA7204700CA218F /* PildoraLiveActivitiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1AC33BE32AAEF73700BA2CC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AC33BD32AAEF73500BA2CC6 /* WidgetsExtension */;
+			targetProxy = 1AC33BE22AAEF73700BA2CC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1AC33BE62AAEF73700BA2CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NU3MTCCCN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fernando.troncoso.PildoraLiveActivities.Widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AC33BE72AAEF73700BA2CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NU3MTCCCN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fernando.troncoso.PildoraLiveActivities.Widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1AF481F32AA7204B00CA218F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -262,6 +445,7 @@
 		1AF481F62AA7204B00CA218F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -270,6 +454,8 @@
 				DEVELOPMENT_TEAM = 5NU3MTCCCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PildoraLiveActivities/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,6 +477,7 @@
 		1AF481F72AA7204B00CA218F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +486,8 @@
 				DEVELOPMENT_TEAM = 5NU3MTCCCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PildoraLiveActivities/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +509,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1AC33BE52AAEF73700BA2CC6 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC33BE62AAEF73700BA2CC6 /* Debug */,
+				1AC33BE72AAEF73700BA2CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1AF481E22AA7204700CA218F /* Build configuration list for PBXProject "PildoraLiveActivities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
