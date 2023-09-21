@@ -11,13 +11,14 @@ import SwiftUI
 
 class TimerManager: ObservableObject {
     static let manager = TimerManager()
-    @Published var isTrackingTime: Bool = false
+    @Published var isStartActivity: Bool = false
     @Published var startTime: Date? = nil
     @Published var activity: Activity<TimeTrackingAttributes>? = nil
     @Published var elapsedTime = 0
     @Published var timer: Timer? = nil
     
     func startActivity() {
+        self.isStartActivity = true
         let attributes = TimeTrackingAttributes()
         let state = TimeTrackingAttributes.ContentState(startTime: TimeResourses.formatTime(seconds: elapsedTime))
         let content = ActivityContent(state: state, staleDate: nil)
@@ -25,6 +26,7 @@ class TimerManager: ObservableObject {
     }
     
     func stopActivity() {
+        self.isStartActivity = false
         let state = TimeTrackingAttributes.ContentState(startTime: TimeResourses.formatTime(seconds: elapsedTime))
         let content = ActivityContent(state: state, staleDate: nil)
         Task {
@@ -38,5 +40,10 @@ class TimerManager: ObservableObject {
         Task {
             await activity?.update(content)
         }
+    }
+    
+    func invalidateTimer() {
+        timer?.invalidate()
+        timer = nil
     }
 }

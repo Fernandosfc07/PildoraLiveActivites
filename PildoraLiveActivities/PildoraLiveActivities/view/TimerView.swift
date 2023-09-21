@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import ActivityKit
 
 struct TimerView: View {
     
@@ -21,10 +20,10 @@ struct TimerView: View {
                 .foregroundColor(.white)
                 .padding(.horizontal, 50)
                 .padding(.bottom, 100)
-            
             HStack {
                 Button {
                     timerManager.elapsedTime = 0
+                    timerManager.invalidateTimer()
                     timerManager.stopActivity()
                 } label: {
                     Image(systemName: "xmark.circle.fill")
@@ -39,10 +38,11 @@ struct TimerView: View {
                         timerManager.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
                             timerManager.elapsedTime += 1
                         }
-                        timerManager.startActivity()
+                        if !timerManager.isStartActivity {
+                            timerManager.startActivity()
+                        }
                     } else {
-                        timerManager.timer?.invalidate()
-                        timerManager.timer = nil
+                        timerManager.invalidateTimer()
                     }
                 }) {
                     Image(systemName: timerManager.timer == nil ? "play.circle.fill" : "pause.circle.fill")

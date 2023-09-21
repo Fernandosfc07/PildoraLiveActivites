@@ -18,18 +18,37 @@ struct Widgets: Widget {
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading) {
-                    Text("Main \(context.state.startTime)")
+                    Image(systemName: "clock")
+                        .resizable()
+                        .foregroundColor(.white)
+                        .frame(width: 40, height: 40)
+                        .padding(.leading, 20)
+                }
+                DynamicIslandExpandedRegion(.trailing) {
+                    VStack {
+                        Spacer()
+                        Text("\(context.state.startTime)")
+                            .font(Font.system(size: 20, design: .default))
+                            .foregroundColor(.white)
+                            .padding(.trailing, 20)
+                        Spacer()
+                    }
                 }
             } compactLeading: {
-                Text("CL \(context.state.startTime)")
+                Image(systemName: "clock")
+                    .resizable()
+                    .foregroundColor(.white)
+                    .frame(width: 24, height: 24)
+                    .padding(.leading, 24)
             } compactTrailing: {
-                Text("CT \(context.state.startTime)")
+                Text("\(context.state.startTime)")
+                    .padding(.trailing, 24)
             } minimal: {
-                Text("M \(context.state.startTime)")
+                Text("\(context.state.startTime)")
             }
-
+            
         }
-
+        
     }
 }
 
@@ -38,46 +57,11 @@ struct TimeTrackingWidgetView: View {
     let timerManager: TimerManager
     
     var body: some View {
-        HStack {
-            Text(context.state.startTime)
-                .font(Font.system(size: 30, design: .default))
-                .frame(maxWidth: .infinity)
-                .foregroundColor(.white)
-            Spacer()
-            HStack(spacing: 24) {
-                Button {
-                    timerManager.elapsedTime = 0
-                    timerManager.stopActivity()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .resizable()
-                        .font(.largeTitle)
-                        .frame(width: 40, height: 40)
-                        .foregroundColor(.gray)
-                }
-            }
-            
-            Button(action: {
-                if timerManager.timer == nil {
-                    timerManager.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-                        timerManager.elapsedTime += 1
-                    }
-                    
-                    timerManager.startActivity()
-                } else {
-                    timerManager.timer?.invalidate()
-                    timerManager.timer = nil
-                }
-            }) {
-                Image(systemName: timerManager.timer == nil ? "play.circle.fill" : "pause.circle.fill")
-                    .resizable()
-                    .font(.largeTitle)
-                    .foregroundColor(timerManager.timer == nil ? .green : .red)
-                    .frame(width: 40, height: 40)
-            }
-        }
-        .padding(.horizontal, 24)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.black)
+        Text(context.state.startTime)
+            .font(Font.system(size: 50, design: .default))
+            .frame(maxWidth: .infinity)
+            .foregroundColor(.white)
+            .padding(.vertical, 30)
+            .background(Color.black)
     }
 }

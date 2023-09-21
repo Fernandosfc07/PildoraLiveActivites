@@ -21,7 +21,6 @@
 		1AC33BE42AAEF73700BA2CC6 /* WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1AC33BD42AAEF73500BA2CC6 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AC33BE92AAEF79B00BA2CC6 /* TimeTrackingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */; };
 		1AF481EB2AA7204700CA218F /* PildoraLiveActivitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF481EA2AA7204700CA218F /* PildoraLiveActivitiesApp.swift */; };
-		1AF481ED2AA7204700CA218F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF481EC2AA7204700CA218F /* ContentView.swift */; };
 		1AF481EF2AA7204B00CA218F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF481EE2AA7204B00CA218F /* Assets.xcassets */; };
 		1AF481F22AA7204B00CA218F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF481F12AA7204B00CA218F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -65,7 +64,6 @@
 		1AC33BEA2AAEFA8500BA2CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1AF481E72AA7204700CA218F /* PildoraLiveActivities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PildoraLiveActivities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF481EA2AA7204700CA218F /* PildoraLiveActivitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PildoraLiveActivitiesApp.swift; sourceTree = "<group>"; };
-		1AF481EC2AA7204700CA218F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AF481EE2AA7204B00CA218F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AF481F12AA7204B00CA218F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +88,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB8BF472ABC1F720071D99A /* attributes */ = {
+			isa = PBXGroup;
+			children = (
+				1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */,
+			);
+			path = attributes;
+			sourceTree = "<group>";
+		};
+		1AB8BF482ABC1F8F0071D99A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1A241B722AB03D76003793B4 /* TimerView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1AB8BF492ABC1FAA0071D99A /* resourses */ = {
+			isa = PBXGroup;
+			children = (
+				1A9FAFD82ABAE26100D9F1B9 /* TimerManager.swift */,
+				1A9FAFDA2ABAE31000D9F1B9 /* TimeResourses.swift */,
+			);
+			path = resourses;
+			sourceTree = "<group>";
+		};
 		1AC33BD52AAEF73500BA2CC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +157,9 @@
 			children = (
 				1AC33BEA2AAEFA8500BA2CC6 /* Info.plist */,
 				1AF481EA2AA7204700CA218F /* PildoraLiveActivitiesApp.swift */,
-				1AF481EC2AA7204700CA218F /* ContentView.swift */,
-				1AC33BCE2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift */,
-				1A241B722AB03D76003793B4 /* TimerView.swift */,
-				1A9FAFD82ABAE26100D9F1B9 /* TimerManager.swift */,
-				1A9FAFDA2ABAE31000D9F1B9 /* TimeResourses.swift */,
+				1AB8BF482ABC1F8F0071D99A /* view */,
+				1AB8BF472ABC1F720071D99A /* attributes */,
+				1AB8BF492ABC1FAA0071D99A /* resourses */,
 				1AF481EE2AA7204B00CA218F /* Assets.xcassets */,
 				1AF481F02AA7204B00CA218F /* Preview Content */,
 			);
@@ -266,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF481ED2AA7204700CA218F /* ContentView.swift in Sources */,
 				1A9FAFD92ABAE26100D9F1B9 /* TimerManager.swift in Sources */,
 				1A9FAFDB2ABAE31000D9F1B9 /* TimeResourses.swift in Sources */,
 				1AC33BCF2AAEF19400BA2CC6 /* TimeTrackingAttributes.swift in Sources */,
